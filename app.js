@@ -6,7 +6,6 @@ const reservationRoutes = require('./api/routes/reservations');
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-// reservation routes
 app.use('/reservations', reservationRoutes)
 
 app.use((req, res, next) => {

@@ -24,7 +24,6 @@ const createRecord = async (fields) => {
     return newReservation.id
 }
 
-// GET SPECIFIC
 router.get('/:id', async (req, res, next) => {
     try {
         const id = req.params.id
