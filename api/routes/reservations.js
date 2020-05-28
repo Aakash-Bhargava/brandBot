@@ -30,7 +30,7 @@ router.get('/:id', async (req, res, next) => {
         const reservation = await getRecordById(id)
         if (reservation) {
             res.status(200).json({
-                reservation
+                ...reservation
             })
         } else {
             res.status(400).json({
